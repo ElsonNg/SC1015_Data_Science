@@ -4,7 +4,7 @@ For most people, buying airline flights is a lengthy process that requires much 
 
 ### Project Goal
    
-This project aims to accurately predict the probability of whether a flight will be delayed or not, based on data that would be available during the time of scheduled flight.
+This project aims to accurately predict the probability of whether a flight will be delayed or not (classification), based on data that would be available during the time of scheduled flight.
 
 # Project Setup
 
@@ -22,7 +22,7 @@ Please view the notebook in the following order:
 
 **Note that only the "Flight Status Prediction" was used in the final training of models.**
  The "Weather Events" and "IATA Codes Dataset" were only used for analysis purposes and were eventually dropped.
- As such, only `dataset.csv` is required for Notebooks 3 & 4.
+ As such, only `dataset.csv` is required for Notebooks 3 & 4 and included in the repository. Please download the files `WeatherEvents_Jan2016-2022.csv` and `iata-icao.csv` separately from the sources below.
 
 - **"Flight Status Prediction"** by *Rob Mulla (Primary)*  
   - https://www.kaggle.com/datasets/robikscube/flight-delay-dataset-20182022/data
@@ -81,8 +81,7 @@ Visualized flight distribution to determine the relation between variables.
 
 ### [4. Training Models](https://github.com/ElsonNg/SC1015_Data_Science/blob/main/4_Training_Models.ipynb) 
 
-- **Models Used**
-
+- **Models Used** <br><br>
 Given the myrad of machine learning models, we chose the most popular and suitable model for performing binary classification.
 
   - Decision Tree Classifier
@@ -93,18 +92,16 @@ Given the myrad of machine learning models, we chose the most popular and suitab
     - Linear model used for binary classification
 
 
-- **Evaluation Metrics**
-  
+- **Evaluation Metrics** <br><br>
 Evaluation of models can be misleading if a wrong metric was used. This was the case when we achieved high accuracy at some point although it was due to overfitting. 
-
 In this problem, we prioritise **recall** to minimize cases of false negatives where by overpreparing passengers for a delay.
 
-  - Recall (**Most Important**)
-  - Accuracy
-  - Confusion Matrix
-  - Precision
-  - F1-Score
-  - AUC-ROC
+    - Recall (**Most Important**)
+    - Accuracy
+    - Confusion Matrix
+    - Precision
+    - F1-Score
+    - AUC-ROC
 
 
 - Removing Irrevelant Features with `feature_importance_score`
